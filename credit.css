@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "ABC Whyte Inktrap Trial";
+    src: local(""), 
+        url("assets/ABCWhyteInktrapVariable-Trial.ttf"),
+        url("assets/ABCWhyteInktrapVariable-Trial.woff"),
+        url("assets/ABCWhyteInktrapVariable-Trial.woff2");
+}
+
+@font-face {
+    font-family: "ABC Whyte Inktrap Mono Trial";
+    font-style: normal;
+    src: local(""),
+        url("assets/ABCWhyteInktrapMono-Regular-Trial.otf"),
+        url("assets/ABCWhyteInktrapMono-Regular-Trial.woff"),
+        url("assets/ABCWhyteInktrapMono-Regular-Trial.woff2");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-size: 16px;
+}
+
+main {
+    padding: 58px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+img {
+    width: 120px;
+}
+
+ul {
+    margin-top: -15px;
+}
+
+li {
+    list-style-type: disc;
+}
+
+.leftcol {
+    padding-right: 40px;
+    grid-column: 2 / 4;
+    border-right: solid 1px white;
+    font-family: 'ABC Whyte Inktrap Trial';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.rightcol {
+    padding-left: 40px;
+    grid-column: 4 / 5;
+    font-family: "ABC Whyte Inktrap Mono Trial";
+    font-weight: 300;
+    line-height: 28px;
+    color: #FEFEFE;
+    
+}
+
+@media only screen 
+and (min-width: 280px) 
+and (max-width: 540px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .leftcol {
+        border: none;
+        margin: 0;
+        padding-right: 0;
+    }
+
+    .rightcol {
+        border-top: solid 1px white;
+        margin-top: 60px;
+        padding-left: 0;
+    }
+}
+
+@media only screen 
+and (min-width: 768px) 
+and (max-width: 1280px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+
+    .leftcol {
+        grid-column: 1;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .rightcol {
+        grid-column: 2;
+        padding-left: 40px;
+    }
+}
