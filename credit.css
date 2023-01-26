@@ -28,6 +28,11 @@ main {
     grid-template-columns: repeat(5, 1fr);
 }
 
+strong {
+    background-color: blue;
+    padding: 0 5px 0;
+}
+
 img {
     width: 120px;
 }
@@ -57,7 +62,7 @@ li {
     font-family: "ABC Whyte Inktrap Mono Trial";
     font-weight: 300;
     line-height: 28px;
-    color: #FEFEFE;
+    color: #ededed;
     
 }
 
