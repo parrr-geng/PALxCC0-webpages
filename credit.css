@@ -29,8 +29,8 @@ main {
 }
 
 strong {
-    background-color: blue;
-    padding: 0 5px 0;
+    color: rgba(88, 88, 255, 0.715);
+    padding: 0 3px 0;
 }
 
 img {
